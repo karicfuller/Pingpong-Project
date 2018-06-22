@@ -18,7 +18,7 @@ var numberEntered = function(number) {
   }
 };
 
-//UI Logic
+//UI Logic.
 
 $(document).ready(function() {
   $form("pingpong").submit(function(event){
