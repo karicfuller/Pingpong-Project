@@ -32,15 +32,3 @@ $(document).ready(function() {
     $(".result").show();
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-}
