@@ -15,7 +15,13 @@ function getResponse(number) {
 
 
 function showResponseArray(responseArray) {
-    console.log(responseArray);
+    var liTags = "";
+    for (var index = 0; index < responseArray.length; index++) {
+        var liTag = "<li>" + responseArray[index] + "</li>";
+        liTags += liTag;
+    }
+    console.log(liTags);
+    $("ol#listOfNumbers").html(liTags);
 }
 
 $(document).ready(function() {
