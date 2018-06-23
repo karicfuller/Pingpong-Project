@@ -1,5 +1,3 @@
-var emptyArray = []
-
 function getResponse(number) {
     if (number % 15 === 0) {
         return "pingpong";
@@ -16,19 +14,27 @@ function getResponse(number) {
 }
 
 
+function showResponseArray(responseArray) {
+    console.log(responseArray);
+}
+
 $(document).ready(function() {
-  $form("pingpong").submit(function(event){
+  $("button").on("click", function(event) {
     event.preventDefault();
-    var number = parseInt($("input#pingpong").val();
-    var countTo = parseInt($(""))
-    var result = numberEntered(number);
-
-    if (!result) {
-      $("#numberList").text("li");
-    } else {
-      $("#numberList").text("");
+    var numberEntered = parseInt($("input#theNumber").val());
+    if (isNaN(numberEntered)) {
+        alert("Please enter a number");
     }
-
-    $(".result").show();
+    else if (numberEntered <= 0) {
+        alert("Enter a positive number");
+    }
+    else {
+      var emptyArray = [];
+      for (var index = 1; index <= numberEntered; index++) {
+        var response = getResponse(index);
+        emptyArray.push(response);
+      }
+      showResponseArray(emptyArray);
+    }
   });
 });
