@@ -1,5 +1,3 @@
-//bizlogic
-
 var emptyArray = []
 
 var numberEntered = function(number) {
@@ -17,8 +15,6 @@ var numberEntered = function(number) {
     $(".result").text(emptyArray);
   }
 };
-
-//UI Logic
 
 $(document).ready(function() {
   $form("pingpong").submit(function(event){

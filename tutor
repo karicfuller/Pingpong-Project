@@ -12,8 +12,8 @@
     <div class="container">
       <div class="jumbotron">
 
-        <h1>Let's Play Ping-Pong!</h1>
-      </div>
+      <h1>Let's Play Ping-Pong!</h1>
+    </div>
 
       <h4>Rules of the game:</h4>
       <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
@@ -29,7 +29,7 @@
             <input id="theNumber" class="form-control" type="text">
       </div><br>
 
-      <button class="btn">Let's Play!</button>
+      <button type="submit" class="btn">Let's Play!</button>
     </div>
 
 
