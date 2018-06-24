@@ -21,7 +21,7 @@ function showResponseArray(responseArray) {
         liTags += liTag;
     }
     console.log(liTags);
-    $("ol#listOfNumbers").html(liTags);
+    $("ul#listOfNumbers").html(liTags);
 }
 
 $(document).ready(function() {
@@ -29,10 +29,10 @@ $(document).ready(function() {
     event.preventDefault();
     var numberEntered = parseInt($("input#theNumber").val());
     if (isNaN(numberEntered)) {
-        alert("Please enter a number");
+        alert("I said enter a NUMBER!");
     }
     else if (numberEntered <= 0) {
-        alert("Enter a positive number");
+        alert("I said enter a NUMBER, but not a negative one!");
     }
     else {
       var emptyArray = [];
